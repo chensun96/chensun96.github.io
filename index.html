@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin-bottom: 20px;
+            min-height: 50vh;
+        }
+
+        .profile-photo img {
+            border-radius: 40%;
+            width: 260px;
+            margin-right: 20px;
+
+        }
+
+        .profile-content p,
+        .profile-content h3 {
+            margin-left: 10%;
+            margin: 5px, 0;
+            font-family: 'Arial', sans-serif;
+            font-size: large;
+
+        }
+
+        .profile-content a {
+
+            margin-left: 10%;
+            color: #007bff;
+            text-decoration: none;
+            font-size: large;
+        }
+
+        .profile-content a:hover {
+            text-decoration: underline;
+        }
+
+
+        section {
+            padding: 1rem 2rem;
+        }
+
+        section#education,
+        section#reserach,
+        section#publications {
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #f4f4f4;
+        }
+
+        #contact-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+
+        #contact-button:hover {
+            opacity: 0.9;
+        }
+
+        @media(max-width:767px) {
+            .profile-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .profile-photo img {
+                width: 100px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1> Chen Sun, PhD Student</h1>
+    </header>
+    <section id="profile">
+        <h2> Profile</h2>
+        <div class="profile-container">
+            <div class="profile-photo">
+                <img src="chen.jpg" alt="Chen Sun">
+            </div>
+            <div class="profile-content">
+                <p> Graduate Student <br>
+                    Department of Computer Science <br>
+                    The University of Iowa<br>
+                    317 MacLean Hall, Iowa City, IA 52242<br>
+                    chen-sun@uiowa.edu <br></p>
+                <!-- <a href="https://scholar.google.com/">google scholar</a><br> -->
+                <!-- <a href="https://github.com/chensun96">github</a><br> -->
+
+                <a href="https://github.com/chensun96"> <i class="fa fa-github" aria-hidden="true"></i> github link</a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="education">
+        <p> I am a third year Ph.D student from <a href=" "> University of Iowa </a> and being advised by <a
+                href="https://sparta.cs.uiowa.edu/people/rishab/">Prof. Rishab Nithyanand</a>. I also had the
+            pleasure
+            of working under the mentorship of <a href="https://shastri.info/">Prof. Supreeth Shastri</a>
+            previously. My
+            research interests are primarily focused on privacy. Specifically, I am interested in developing tools
+            that
+            simplify and enhance compliance with data protection regulations. More recently, I expanded my interest
+            to
+            Internet measurement and hope to bring greater transparency to the Internet.</p>
+    </section>
+    <section id="research">
+        <h2> Research Project</h2>
+        <ul>
+            <li><b>Establishing the State of the Art for GDPR enforcement </b> <br />
+                &#x2022; Defined GDPR SOTA to reduce uncertainty in complying with GDPR. <br />
+                &#x2022; Used BeautifulSoup and Selenium to build an information archival system to automate crawling
+                all GDPR related documents. <br />
+                &#x2022; Automated label key characteristics of each document and systematic analyze their enforcement
+                trends.<br />
+                &#x2022; Used React to created a website allows users to filter and download GDPR documents by country,
+                articles, penalty etc.</li>
+        </ul>
+
+        <ul>
+            <li><b>Tradeoffs in the Design and Implementation of Right to be Forgotten (ongoing) </b> <br />
+                &#x2022; Analyzing the legal requirements of RTBF and implementing RTBF in Elasticsearch to explore the
+                different levels of the compliance tradeoff. </li>
+        </ul>
+    </section>
+
+    <section id="publictions">
+        <h2> Publications</h2>
+        <ul>
+            <li><b>GDPRxiv: Establishing the State of the Art in GDPR Enforcement</b> <a
+                    href="https://gdprxiv.org/">[Website]</a><a
+                    href="https://github.com/lawfulcomputing/GDPRxiv">[Code]</a><br />
+                <b>Chen Sun</b>, Evan Jacobs, Daniel Lehmann, Andrew Crouse, and Supreeth Shastri. <br />
+                Published in Privacy Enhancing Technologies Symposium (PETS) 2023 (<b>PETS, 2023</b>)
+            </li>
+        </ul>
+
+
+
+    </section>
+    <footer>
+        <a href="mailto:chen-sun@uiowa.edu" class="email-button"> Contract Me</a>
+        <a href="TODOLIST.html"> This is mini todo list</a>
+    </footer>
+
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('contact-button').addEventListener('click', function () {
+            window.location.href = 'mailto:chen-sun@uiowa.ed';
+        });
+    });
+</script>
+
+</html>
