@@ -26,22 +26,20 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
-            background-color: #f4f4f4;
-            margin-bottom: 20px;
-            min-height: 50vh;
+            padding: 5px;
+            margin-bottom: 10px;
+            width: 80%;
+            margin: auto;
         }
 
         .profile-photo img {
             border-radius: 40%;
-            width: 260px;
-            margin-right: 20px;
-
+            width: 200px;
+            margin-right: 60px;
         }
 
         .profile-content p,
         .profile-content h3 {
-            margin-left: 10%;
             margin: 5px, 0;
             font-family: 'Arial', sans-serif;
             font-size: large;
@@ -49,8 +47,6 @@
         }
 
         .profile-content a {
-
-            margin-left: 10%;
             color: #007bff;
             text-decoration: none;
             font-size: large;
@@ -63,6 +59,8 @@
 
         section {
             padding: 1rem 2rem;
+            width: 960px; /* Adjust the width as needed */
+            margin: auto; /* This will center the section */
         }
 
         section#education,
@@ -106,7 +104,7 @@
 
 <body>
     <header>
-        <h1> Chen Sun, PhD Student</h1>
+        <h1> Chen Sun</h1>
     </header>
     <section id="profile">
         <h2> Profile</h2>
@@ -116,14 +114,14 @@
             </div>
             <div class="profile-content">
                 <p> Graduate Student <br>
-                    Department of Computer Science <br>
-                    The University of Iowa<br>
+                    <a href="https://uiowa.edu/">Department of Computer Science</a> <br>
+                    <a href="https://uiowa.edu/">The University of Iowa</a> <br>
                     317 MacLean Hall, Iowa City, IA 52242<br>
                     chen-sun@uiowa.edu <br></p>
                 <!-- <a href="https://scholar.google.com/">google scholar</a><br> -->
                 <!-- <a href="https://github.com/chensun96">github</a><br> -->
-
-                <a href="https://github.com/chensun96"> <i class="fa fa-github" aria-hidden="true"></i> github link</a>
+                </p>
+                <a href="https://github.com/chensun96"> <i class="fa fa-github" aria-hidden="true"></i> github</a>
 
             </div>
 
@@ -136,14 +134,28 @@
             pleasure
             of working under the mentorship of <a href="https://shastri.info/">Prof. Supreeth Shastri</a>
             previously. My
-            research interests are primarily focused on privacy. Specifically, I am interested in developing tools
+            research interests are primarily focused on online privacy. Specifically, I am interested in developing tools
             that
             simplify and enhance compliance with data protection regulations. More recently, I expanded my interest
             to
-            Internet measurement and hope to bring greater transparency to the Internet.</p>
+            privacy measurement and hope to bring greater transparency to the Internet.</p>
     </section>
     <section id="research">
-        <h2> Research Project</h2>
+        <h2> Research Projects</h2>
+        <ul>
+            <li><b>WebMonetize Insight: Decoding Website Revenue Streams (ongoing) </b> <br />
+                &#x2022; Analyze and categorize the various monetization strategies employed by websites.
+                This involves creating a comprehensive framework to identify and understand the different revenue
+                models, such as affiliate marketing, sponsored content, display advertising, product sales, and
+                membership programs. </li>
+        </ul>
+
+        <ul>
+            <li><b>Tradeoffs in the Design and Implementation of Right to be Forgotten (ongoing) </b> <br />
+                &#x2022; Analyzing the legal requirements of RTBF and implementing RTBF in Elasticsearch to explore the
+                different levels of the compliance tradeoff. </li>
+        </ul>
+
         <ul>
             <li><b>Establishing the State of the Art for GDPR enforcement </b> <br />
                 &#x2022; Defined GDPR SOTA to reduce uncertainty in complying with GDPR. <br />
@@ -153,12 +165,6 @@
                 trends.<br />
                 &#x2022; Used React to created a website allows users to filter and download GDPR documents by country,
                 articles, penalty etc.</li>
-        </ul>
-
-        <ul>
-            <li><b>Tradeoffs in the Design and Implementation of Right to be Forgotten (ongoing) </b> <br />
-                &#x2022; Analyzing the legal requirements of RTBF and implementing RTBF in Elasticsearch to explore the
-                different levels of the compliance tradeoff. </li>
         </ul>
     </section>
 
@@ -177,7 +183,7 @@
 
     </section>
     <footer>
-        <a href="mailto:chen-sun@uiowa.edu" class="email-button"> Contract Me</a>
+        <a href="mailto:chen-sun@uiowa.edu" class="email-button"> Contract Me<br></a>
         <a href="TODOLIST.html"> This is mini todo list</a>
     </footer>
 
